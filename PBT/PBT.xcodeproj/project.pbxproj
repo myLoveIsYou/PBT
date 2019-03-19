@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		677997E20F07EC09EDAC60D4 /* libPods-PBT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87767452C9B3EDCF1D38F40F /* libPods-PBT.a */; };
 		CDC96982223235260073C830 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC96981223235260073C830 /* AppDelegate.m */; };
 		CDC96985223235260073C830 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC96984223235260073C830 /* ViewController.m */; };
 		CDC96988223235260073C830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC96986223235260073C830 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C7BBC7656692558408B5E33 /* Pods-PBT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBT.release.xcconfig"; path = "Pods/Target Support Files/Pods-PBT/Pods-PBT.release.xcconfig"; sourceTree = "<group>"; };
+		87767452C9B3EDCF1D38F40F /* libPods-PBT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PBT.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC9697D223235260073C830 /* PBT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC96980223235260073C830 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CDC96981223235260073C830 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		CDC9698F223235260073C830 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CDC969972232353F0073C830 /* UIButton+eat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+eat.h"; sourceTree = "<group>"; };
 		CDC969982232353F0073C830 /* UIButton+eat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+eat.m"; sourceTree = "<group>"; };
+		EB3D9520B7BEF315077E10DD /* Pods-PBT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PBT/Pods-PBT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,18 +40,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				677997E20F07EC09EDAC60D4 /* libPods-PBT.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48A1D24AF8A33B3DDC68C708 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB3D9520B7BEF315077E10DD /* Pods-PBT.debug.xcconfig */,
+				0C7BBC7656692558408B5E33 /* Pods-PBT.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CDC96974223235260073C830 = {
 			isa = PBXGroup;
 			children = (
 				CDC96996223235300073C830 /* Clasess */,
 				CDC9697F223235260073C830 /* PBT */,
 				CDC9697E223235260073C830 /* Products */,
+				48A1D24AF8A33B3DDC68C708 /* Pods */,
+				EC8302DB1AC14F3E94532CF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +100,14 @@
 			path = Clasess;
 			sourceTree = "<group>";
 		};
+		EC8302DB1AC14F3E94532CF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87767452C9B3EDCF1D38F40F /* libPods-PBT.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,6 +115,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDC96993223235260073C830 /* Build configuration list for PBXNativeTarget "PBT" */;
 			buildPhases = (
+				6D2610F4C151714FBEC9FCAF /* [CP] Check Pods Manifest.lock */,
 				CDC96979223235260073C830 /* Sources */,
 				CDC9697A223235260073C830 /* Frameworks */,
 				CDC9697B223235260073C830 /* Resources */,
@@ -148,6 +173,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D2610F4C151714FBEC9FCAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PBT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CDC96979223235260073C830 /* Sources */ = {
@@ -297,6 +343,7 @@
 		};
 		CDC96994223235260073C830 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB3D9520B7BEF315077E10DD /* Pods-PBT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,6 +360,7 @@
 		};
 		CDC96995223235260073C830 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C7BBC7656692558408B5E33 /* Pods-PBT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

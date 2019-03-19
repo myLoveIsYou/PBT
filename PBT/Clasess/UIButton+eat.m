@@ -7,9 +7,11 @@
 //
 
 #import "UIButton+eat.h"
-
+#import "AFNetworking.h"
 @implementation UIButton (eat)
 -(void)eat{
     NSLog(@"213");
+    AFHTTPSessionManager * manager = [[AFHTTPSessionManager alloc]initWithBaseURL:[NSURL URLWithString:@"www.baidu.com"]];;
+
 }
 @end
